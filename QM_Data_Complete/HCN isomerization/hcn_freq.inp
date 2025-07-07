@@ -1,0 +1,26 @@
+$molecule
+0 1
+X
+C X 1.0
+N C 1.169686 X 90.0
+H C 1.066674 X 90.0 N 180.0
+$end
+
+$rem
+JOBTYPE OPT
+EXCHANGE HF
+CORRELATION MP2
+BASIS 6-311G**
+$end
+@@@
+$molecule
+read
+$end
+
+$rem
+JOBTYPE FREQ
+EXCHANGE HF
+CORRELATION MP2
+BASIS 6-311G**
+SCF_GUESS READ
+$end

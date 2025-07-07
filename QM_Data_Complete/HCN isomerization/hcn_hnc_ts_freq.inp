@@ -1,0 +1,31 @@
+$molecule
+0 1
+C
+H 1 1.066674
+N 1 1.169686 2 74.0
+$end
+
+$rem
+JOBTYPE OPT
+EXCHANGE HF
+CORRELATION MP2
+BASIS 6-311G**
+$end
+
+$opt
+CONSTRAINT
+bend 3 1 2 74.0
+ENDCONSTRAINT
+$end
+@@@
+$molecule
+read
+$end
+
+$rem
+JOBTYPE FREQ
+EXCHANGE HF
+CORRELATION MP2
+BASIS 6-311G**
+SCF_GUESS READ
+$end

@@ -1,0 +1,11 @@
+$molecule
+-1 1
+Cl 0.000000 0.000000 0.000000 
+$end
+
+$rem
+JOBTYPE SP
+EXCHANGE HF
+CORRELATION MP2
+BASIS 6-311G**
+$end
